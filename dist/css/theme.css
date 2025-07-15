@@ -42,21 +42,14 @@
   }
 }
 body {
-  background: var(--primary-color);
+  max-width: 1920px;
+  background-color: black;
   color: #fff;
-  background-color: red;
 }
 
-/** Variables **/
-:root {
-  --primary-color: #e0e9ff;
+.top-content {
+  display: flex;
 }
-
-/** Components **/
-.c-section {
-  margin-bottom: 50px;
-  padding-bottom: 50px;
-  border-bottom: 1px solid #dadada;
+.top-content__title h1 {
+  font-family: "Staatliches", sans-serif;
 }
-
-/** Page(s) **/
