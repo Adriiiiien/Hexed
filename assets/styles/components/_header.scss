@@ -1,0 +1,47 @@
+.header {
+    position: fixed;
+    max-width: 1920px;
+    width: 100%;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid white;
+    z-index: 9999;
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        top: 0;
+        left: 0;
+        padding: 20px 40px;
+
+        &__logo {
+            width: 40px;
+        }
+
+        &__ul {
+
+            &__li {
+               list-style: none;
+               display: inline-block; 
+               margin-left: 40px;
+
+                &__a {
+                    display: inline-block; // pour le bon fonctionnement de l'effet de transform dans le hoover
+                    text-decoration: none;
+                    font-family: "Roboto", sans-serif;
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: white;
+                    opacity: 0.8;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        transform: translateY(-4px);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
