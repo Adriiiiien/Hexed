@@ -1,0 +1,83 @@
+.seventh-content {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 1920px;
+
+    &__button {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        padding: 10px 40px;
+        z-index: 2;
+
+        &__logo {
+            display: flex;
+            cursor: pointer;
+
+            svg {
+                width: 30px;
+                fill: white;
+                opacity: 0.8;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &__text {
+            display: flex;
+            cursor: pointer;
+            transition: all 0.3s;
+
+            p {
+                font-family: "Roboto", sans-serif;
+                font-size: 16px;
+                font-weight: 900;
+                text-transform: uppercase;
+                color: white;
+            }
+
+            &:hover {
+                scale: 1.05
+            }
+        }
+    }
+}
+
+.back-video-seventh-content {
+    position: absolute;
+    opacity: 0.5;
+    width: 120%;
+    bottom: 0;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+@media (max-width: 1024px) {
+    .seventh-content {
+        &__button {
+            &__text {
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .seventh-content {
+        &__button {
+            &__text {
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

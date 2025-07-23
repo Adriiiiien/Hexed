@@ -1,11 +1,11 @@
 .second-content {
     display: flex;
     flex-direction: column;
-    max-width: 1920px;
     justify-content: center;
+    max-width: 1920px;
+    background-color: #0a0a0a;
     padding-top: 160px;
     padding-bottom: 40px;
-    background-color: #0a0a0a;
 
     &__text {
         display: flex;
@@ -18,7 +18,7 @@
             display: flex;
             
             h2 {
-                font-size: 5em;
+                font-size: 75px;
                 font-weight: 600;
                 font-family: "Six Caps", sans-serif;
                 text-transform: uppercase;
@@ -33,7 +33,7 @@
             display: flex;
 
             p {
-                font-size: 1.2em;
+                font-size: 19px;
                 font-weight: 400;
                 font-family: "Roboto", sans-serif;
                 color: white;
@@ -101,7 +101,7 @@
                 z-index: 3;
                 
                 h2 {
-                    font-size: 10em;
+                    font-size: 160px;
                     font-weight: 600;
                     font-family: "Six Caps", sans-serif;
                     text-transform: uppercase;
@@ -155,7 +155,7 @@
                 z-index: 3;
                 
                 h2 {
-                    font-size: 10em;
+                    font-size: 160px;
                     font-weight: 600;
                     font-family: "Six Caps", sans-serif;
                     text-transform: uppercase;
@@ -176,6 +176,271 @@
                     object-fit: cover;
                     object-position: top left;
                     opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1720px) { // pour que les image de dwight et nurse ne se touchent pas 
+    .second-content {
+        &__container {
+            &__killer {
+                &__image {
+                    img {
+                        width: 600px;
+                        height: 900px;
+                    }
+                }
+            }
+
+            &__survivor {
+                &__image {
+                    img {
+                        width: 600px;
+                        height: 900px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .second-content {
+        padding-top: 70px;
+        &__text {
+            &__title {
+                h2 {
+                    font-size: 65px;
+                }
+            }
+
+            &__subtitle {
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+        &__container {
+            &__killer {
+                &__text {
+                    h2 {
+                        font-size: 140px;
+                    }
+                }
+                &__logo {
+                    img {
+                        width: 45%;
+                    }
+                }
+                &__image {
+                    img {
+                        width: 500px;
+                        height: 800px;
+                    }
+                }
+            }
+
+            &__survivor {
+                &__text {
+                    h2 {
+                        font-size: 140px;
+                    }
+                }
+                &__logo {
+                    img {
+                        width: 45%;
+                    }
+                }
+                &__image {
+                    img {
+                        width: 500px;
+                        height: 800px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .second-content {
+        padding-top: 60px;
+        &__text {
+            &__title {
+                h2 {
+                    font-size: 55px;
+                }
+            }
+
+            &__subtitle {
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+        &__container {
+            &__killer {
+                &__text {
+                    h2 {
+                        font-size: 120px;
+                    }
+                }
+                &__logo {
+                    img {
+                        width: 40%;
+                    }
+                }
+                &__image {
+                    img {
+                        width: 350px;
+                        height: 600px;
+                    }
+                }
+            }
+
+            &__survivor {
+                &__text {
+                    h2 {
+                        font-size: 120px;
+                    }
+                }
+                &__logo {
+                    img {
+                        width: 40%;
+                    }
+                }
+                &__image {
+                    img {
+                        width: 400px;
+                        height: 600px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .second-content {
+        padding-top: 50px;
+        &__text {
+            &__title {
+                h2 {
+                    font-size: 45px;
+                }
+            }
+
+            &__subtitle {
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+        &__container {
+            margin-bottom: 0;
+
+            &__killer {
+                &__text {
+                    h2 {
+                        font-size: 100px;
+                    }
+                }
+                &__logo {
+                    padding-top: 40px;
+
+                    img {
+                        width: 50%;
+                    }
+                }
+                &__image {
+                    img {
+                        width: 300px;
+                        height: 500px;
+                    }
+                }
+            }
+
+            &__survivor {
+                &__text {
+                    h2 {
+                        font-size: 100px;
+                    }
+                }
+                &__logo {
+                    padding-top: 40px;
+
+                    img {
+                        width: 50%;
+                    }
+                }
+                &__image {
+                    img {
+                        width: 300px;
+                        height: 500px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .second-content {
+        padding-top: 10px;
+
+        &__text {
+            gap: 10px;
+
+            &__title {
+                h2 {
+                    font-size: 40px;
+                }
+            }
+
+            &__subtitle {
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
+        &__container {
+            &__killer {
+                &__text {
+                    h2 {
+                        font-size: 60px;
+                    }
+                }
+                &__logo {
+                    img {
+                        width: 50%;
+                    }
+                }
+                &__image {
+                    img {
+                        width: 200px;
+                        height: 400px;
+                    }
+                }
+            }
+
+            &__survivor {
+                &__text {
+                    h2 {
+                        font-size: 60px;
+                    }
+                }
+                &__logo {
+                    img {
+                        width: 50%;
+                    }
+                }
+                &__image {
+                    img {
+                        width: 200px;
+                        height: 400px;
+                    }
                 }
             }
         }
