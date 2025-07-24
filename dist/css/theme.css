@@ -533,23 +533,23 @@ body {
     font-size: 10px;
   }
   .second-content__container__killer__text h2 {
-    font-size: 60px;
+    font-size: 50px;
   }
   .second-content__container__killer__logo img {
     width: 50%;
   }
   .second-content__container__killer__image img {
-    width: 200px;
+    width: 150px;
     height: 400px;
   }
   .second-content__container__survivor__text h2 {
-    font-size: 60px;
+    font-size: 50px;
   }
   .second-content__container__survivor__logo img {
     width: 50%;
   }
   .second-content__container__survivor__image img {
-    width: 200px;
+    width: 150px;
     height: 400px;
   }
 }
