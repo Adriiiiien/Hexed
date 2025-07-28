@@ -17,6 +17,8 @@
 
         &__logo {
             width: 40px;
+            fill: white;
+            stroke: #000; // enlève les contours du svg
         }
 
         &__ul {

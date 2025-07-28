@@ -76,6 +76,8 @@ body {
 }
 .header__nav__logo {
   width: 40px;
+  fill: white;
+  stroke: #000;
 }
 .header__nav__ul__li {
   list-style: none;
@@ -338,6 +340,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
+  user-select: none;
 }
 .second-content__container__survivor__text h2 {
   font-size: 160px;
@@ -384,6 +387,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
+  user-select: none;
 }
 .second-content__container__killer__text h2 {
   font-size: 160px;

@@ -99,6 +99,7 @@
                 left: 50%;
                 transform: translateX(-50%);
                 z-index: 3;
+                user-select: none;
                 
                 h2 {
                     font-size: 160px;
@@ -153,6 +154,7 @@
                 left: 50%;
                 transform: translateX(-50%);
                 z-index: 3;
+                user-select: none;
                 
                 h2 {
                     font-size: 160px;
