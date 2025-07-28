@@ -1,12 +1,19 @@
+// reset et doc avec le html body et content
 @use 'elements/reset';
 @use 'elements/document';
+
+// toutes les variables
 @use 'settings/config.variables';
+
+// header / footer idsolé
 @use 'components/header';
-@use 'components/top-content';
-@use 'components/second-content';
-@use 'components/third-content';
-@use 'components/fourth-content';
-@use 'components/fifth-content';
-@use 'components/sixth-content';
-@use 'components/seventh-content';
 @use 'components/footer';
+
+// page d'acceuil
+@use 'components/index/first-content';
+@use 'components/index/second-content';
+@use 'components/index/third-content';
+@use 'components/index/fourth-content';
+@use 'components/index/fifth-content';
+@use 'components/index/sixth-content';
+@use 'components/index/seventh-content';

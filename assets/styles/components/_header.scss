@@ -1,23 +1,25 @@
+@use '../settings/config.variables' as config;
+
 .header {
     position: fixed;
     max-width: 1920px;
     width: 100%;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid config.$text-color;
     z-index: 9999;
 
     &__nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 20px 40px;
+        padding: config.$padding-content;
         top: 0;
         left: 0;
 
         &__logo {
             width: 40px;
-            fill: white;
+            fill: config.$text-color;
             stroke: #000; // enlève les contours du svg
         }
 
@@ -26,15 +28,15 @@
             &__li {
                list-style: none;
                display: inline-block; 
-               margin-left: 40px;
+               margin-left: config.$padding-margin-global-40;
 
                 &__a {
                     display: inline-block; // pour le bon fonctionnement de l'effet de transform dans le hoover
                     text-decoration: none;
-                    color: white;
-                    font-family: "Roboto", sans-serif;
-                    font-size: 24px;
-                    font-weight: 600;
+                    color: config.$text-color;
+                    font-family: config.$font-family-text;
+                    font-size: config.$h3-big-size;
+                    font-weight: config.$h3-weight;
                     opacity: 0.8;
                     transition: all 0.3s ease;
 
@@ -54,7 +56,7 @@
             &__ul {
                 &__li {
                     &__a {
-                        font-size: 20px;
+                        font-size: config.$h3-medium-size;
                     }
                 }
             }

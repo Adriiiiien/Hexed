@@ -1,8 +1,10 @@
+@use '../../settings/config.variables' as config;
+
 .fifth-content {
     max-width: 1920px;
     width: 100%;
     height: 500px;
-    background-color: hsl(0, 0%, 4%);
+    background-color: config.$background-color;
     padding-top: 20px;
     position: relative;
     align-content: center;
@@ -14,7 +16,7 @@
         width: 100%;
         height: 100%;
         bottom: 0;
-        background: linear-gradient(50deg,rgba(10, 10, 10, 0) 15%, rgba(10, 10, 8, 0.9) 90%);
+        background: config.$background-color-gradient;
         z-index: 2;
     }
 
@@ -29,55 +31,55 @@
         &__title {
 
             h3 {
-                font-family: "Six Caps", sans-serif;
+                font-family: config.$font-family-title;
                 font-size: 100px;
-                font-weight: 900;
-                letter-spacing: 5px;
+                font-weight: config.$h3-weight;
+                letter-spacing: config.$letter-spacing-title-text;
                 text-transform: uppercase;
-                background: -webkit-linear-gradient(#5a5a5a, #ffffff);
+                background: -webkit-linear-gradient(config.$text-gradient-color, config.$text-color);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
         }
 
         &__subtitle {
-            padding-top: 40px;
+            padding-top: config.$padding-margin-global-40;
 
             h4 {
-                font-family: "Roboto", sans-serif;
-                font-size: 24px;
-                font-weight: 600;
-                color: white;
+                font-family: config.$font-family-text;
+                font-size: config.$h4-big-size;
+                font-weight: config.$h4-weight;
+                color: config.$text-color;
             }
         }
 
         &__desc {
-            padding-top: 20px;
+            padding-top: config.$padding-margin-global-20;
 
             p {
-                font-family: "Roboto", sans-serif;
-                font-size: 16px;
-                font-weight: 400;
-                color: white;
+                font-family: config.$font-family-text;
+                font-size: config.$p-big-size;
+                font-weight: config.$p-weight;
+                color: config.$text-color;
             }
         }
 
         &__button {
-            padding-top: 40px;
+            padding-top: config.$padding-margin-global-40;
             cursor: pointer;
 
             p {
                 display: inline; // pour que le bg color ne prenne que la taille du text
-                font-family: "Roboto", sans-serif;
-                font-size: 18px;
-                font-weight: 600;
-                color: white;
+                font-family: config.$font-family-text;
+                font-size: config.$p-big-size;
+                font-weight: config.$p-weight;
+                color: config.$text-color;
                 background-color: rgba(204, 33, 33, 0.4);
                 padding: 10px 15px;
                 transition: all 0.3s ;
 
                 &:hover {
-                    background-color: white;
+                    background-color: config.$text-color;
                     color: rgb(204, 33, 33);
                 }
             }
@@ -90,10 +92,6 @@
         right: -25%;
         top: 0;
         z-index: 2;
-
-        img {
-
-        }
     }
 }
 
@@ -128,13 +126,13 @@
 
             &__subtitle {
                 h4 {
-                    font-size: 22px;
+                    font-size: config.$h4-medium-size;
                 }
             }
 
             &__button {
                 p {
-                    font-size: 16px;
+                    font-size: config.$p-medium-size;
                 }
             }
         }
@@ -150,13 +148,16 @@
 
 @media (max-width: 768px) {
     .fifth-content {
+        height: auto;
+        padding: 20px 0px;
+        
         &__text {
             -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(204, 33, 33, 0.5);
-            padding: 20px;
-            border-radius: 20px;
-            margin-left: 20px;
+            padding: config.$padding-margin-global-20;
+            border-radius: config.$border-radius-global-20;
+            margin-left: config.$padding-margin-global-20;
             width: 70%;
 
             &__title {
@@ -167,16 +168,16 @@
 
             &__subtitle {
                 h4 {
-                    font-size: 18px;
+                    font-size: config.$h4-small-size;
                 }
             }
 
             &__button {
-                padding-bottom: 20px;
+                padding-bottom: config.$padding-margin-global-20;
 
                 p {
-                    font-size: 12px;
-                    border-radius: 20px;
+                    font-size: config.$p-small-size;
+                    border-radius: config.$border-radius-global-20;
                 }
             }
         }

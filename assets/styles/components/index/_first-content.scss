@@ -1,8 +1,10 @@
-.top-content {
+@use '../../settings/config.variables' as config;
+
+.first-content {
     display: flex;
     position: relative;
     justify-content: center;
-    background: #0A0A0A;
+    background: config.$background-color;
     overflow: hidden;
     z-index: 2;
 
@@ -10,7 +12,7 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        background: linear-gradient(0deg,rgba(10, 10, 10, 1) 10%, rgba(237, 221, 83, 0) 100%);
+        background: config.$background-color-gradient;
         z-index: 3;
     }
 
@@ -31,10 +33,10 @@
             opacity: 0.5;
 
             p {
-                font-family: "Roboto", sans-serif;
-                font-size: 17px;
-                font-weight: 600;
-                color: white;
+                font-family: config.$font-family-text;
+                font-size: config.$p-big-size;
+                font-weight: config.$p-weight;
+                color: config.$text-color;
             }
         }
 
@@ -43,11 +45,11 @@
             flex-direction: row;
 
             h1 {
-                font-family: "Six Caps", sans-serif;
+                font-family: config.$font-family-title;
                 font-size: 400px;
-                font-weight: 900;
+                font-weight: config.$h1-weight;
                 text-transform: uppercase;
-                background: -webkit-linear-gradient(#ffffff, #5a5a5a);
+                background: -webkit-linear-gradient(config.$text-color, config.$text-gradient-color);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
@@ -56,14 +58,14 @@
         &__subtitle {
             display: flex;
             flex-direction: row;
-            padding-top: 20px;
+            padding-top: config.$padding-margin-global-20;
             opacity: 0.5;
 
             p {
-                color: white;
-                font-family: "Roboto", sans-serif;
-                font-size: 24px;
-                font-weight: 600;
+                color: config.$text-color;
+                font-family: config.$font-family-text;
+                font-size: config.$p-big-size;
+                font-weight: config.$p-weight;
             }
         }
     }
@@ -91,12 +93,12 @@
 }
 
 @media (max-width: 1500px) {
-    .top-content {
+    .first-content {
 
         &__text {
             &__toptitle {
                 p {
-                    font-size: 13px;
+                    font-size: config.$p-medium-size;
                 }
             }
 
@@ -108,7 +110,7 @@
 
             &__subtitle {
                 p {
-                    font-size: 18px;
+                    font-size: config.$p-medium-size;
                 }
             }
         }
@@ -116,12 +118,12 @@
 }
 
 @media (max-width: 1280px) {
-    .top-content {
+    .first-content {
 
         &__text {
             &__toptitle {
                 p {
-                    font-size: 9px;
+                    font-size: config.$p-small-size;
                 }
             }
 
@@ -133,7 +135,7 @@
 
             &__subtitle {
                 p {
-                    font-size: 12px;
+                    font-size: config.$p-small-size;
                 }
             }
         }
@@ -141,7 +143,7 @@
 }
 
 @media (max-width: 1024px) { // pour que l'image de pyramid head ne s'overflow hidden pas sur la gauche
-    .top-content {
+    .first-content {
 
         &__text {
             &__toptitle {
@@ -153,13 +155,6 @@
                     font-size: 150px;
                 }
             }
-
-            &__subtitle {
-                padding-top: 10px;
-                p {
-                    font-size: 9px;
-                }
-            }
         }
 
         &__image {
@@ -169,25 +164,15 @@
 }
 
 @media (max-width: 768px) { // pour que l'image de pyramid head ne s'overflow hidden pas sur la gauche
-    .top-content {
+    .first-content {
         &__text {
             padding-left: 0;
             margin-bottom: 0;
-            padding: 40px;
-            &__toptitle {
-                display: none;
-            }
+            padding: config.$padding-margin-global-40;
 
             &__title {
                 h1 {
                     font-size: 120px;
-                }
-            }
-
-            &__subtitle {
-                padding-top: 10px;
-                p {
-                    font-size: 9px;
                 }
             }
         }

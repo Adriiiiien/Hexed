@@ -1,17 +1,19 @@
+@use '../../settings/config.variables' as config;
+
 .second-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 1920px;
-    background-color: #0a0a0a;
+    background-color: config.$background-color;
     padding-top: 160px;
-    padding-bottom: 40px;
+    padding-bottom: 200px;
 
     &__text {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: config.$gap-global;
         z-index: 4;
 
         &__title {
@@ -19,11 +21,11 @@
             
             h2 {
                 font-size: 75px;
-                font-weight: 600;
-                font-family: "Six Caps", sans-serif;
+                font-weight: config.$h2-weight;
+                font-family: config.$font-family-title;
                 text-transform: uppercase;
-                letter-spacing: 5px;
-                background: -webkit-linear-gradient(#5a5a5a, #ffffff);
+                letter-spacing: config.$letter-spacing-title-text;
+                background: -webkit-linear-gradient(config.$text-gradient-color, config.$text-color);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
@@ -33,31 +35,31 @@
             display: flex;
 
             p {
-                font-size: 19px;
-                font-weight: 400;
-                font-family: "Roboto", sans-serif;
-                color: white;
+                font-size: config.$p-big-size;
+                font-weight: config.$p-weight;
+                font-family: config.$font-family-text;
+                color: config.$text-color;
                 
                 a {
                     text-decoration: none;
 
                     span.first {
                         text-transform: uppercase;
-                        color: white;
-                        font-weight: 700;
+                        color: config.$text-color;
+                        font-weight: config.$h1-weight;
 
                         &:hover {
-                            color: #429aff;
+                            color: config.$survivors-color;
                         }
                     }
 
                     span.second {
                         text-transform: uppercase;
-                        color: white;
-                        font-weight: 700;
+                        color: config.$text-color;
+                        font-weight: config.$h1-weight;
 
                         &:hover {
-                            color: #ff3232;
+                            color: config.$killers-color;
                         }
                     }
                 }
@@ -69,8 +71,8 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         text-align: center;
-        padding-top: 40px;
-        margin-bottom: 40px;
+        padding-top: config.$padding-margin-global-40;
+        margin-bottom: config.$padding-margin-global-40;
 
         &__survivor {
             display: flex;
@@ -103,10 +105,10 @@
                 
                 h2 {
                     font-size: 160px;
-                    font-weight: 600;
-                    font-family: "Six Caps", sans-serif;
+                    font-weight: config.$h2-weight;
+                    font-family: config.$font-family-title;
                     text-transform: uppercase;
-                    color: white;
+                    color: config.$text-color;
                     opacity: 0.3;
                 }
             }
@@ -158,10 +160,10 @@
                 
                 h2 {
                     font-size: 160px;
-                    font-weight: 600;
-                    font-family: "Six Caps", sans-serif;
+                    font-weight: config.$h2-weight;
+                    font-family: config.$font-family-title;
                     text-transform: uppercase;
-                    color: white;
+                    color: config.$text-color;
                     opacity: 0.3;
                 }
             }
@@ -211,6 +213,8 @@
 @media (max-width: 1280px) {
     .second-content {
         padding-top: 70px;
+        padding-bottom: 300px;
+
         &__text {
             &__title {
                 h2 {
@@ -220,10 +224,11 @@
 
             &__subtitle {
                 p {
-                    font-size: 16px;
+                    font-size: config.$p-medium-size;
                 }
             }
         }
+
         &__container {
             &__killer {
                 &__text {
@@ -250,11 +255,13 @@
                         font-size: 140px;
                     }
                 }
+
                 &__logo {
                     img {
                         width: 45%;
                     }
                 }
+
                 &__image {
                     img {
                         width: 500px;
@@ -269,6 +276,8 @@
 @media (max-width: 1024px) {
     .second-content {
         padding-top: 60px;
+        padding-bottom: 220px;
+
         &__text {
             &__title {
                 h2 {
@@ -278,10 +287,11 @@
 
             &__subtitle {
                 p {
-                    font-size: 14px;
+                    font-size: config.$p-small-size;
                 }
             }
         }
+
         &__container {
             &__killer {
                 &__text {
@@ -289,11 +299,13 @@
                         font-size: 120px;
                     }
                 }
+
                 &__logo {
                     img {
                         width: 40%;
                     }
                 }
+
                 &__image {
                     img {
                         width: 350px;
@@ -327,19 +339,16 @@
 @media (max-width: 768px) {
     .second-content {
         padding-top: 50px;
+        padding-bottom: 120px;
+
         &__text {
             &__title {
                 h2 {
                     font-size: 45px;
                 }
             }
-
-            &__subtitle {
-                p {
-                    font-size: 12px;
-                }
-            }
         }
+
         &__container {
             margin-bottom: 0;
 
@@ -350,7 +359,7 @@
                     }
                 }
                 &__logo {
-                    padding-top: 40px;
+                    padding-top: config.$padding-margin-global-40;
 
                     img {
                         width: 50%;
@@ -358,7 +367,7 @@
                 }
                 &__image {
                     img {
-                        width: 300px;
+                        width: 250px;
                         height: 500px;
                     }
                 }
@@ -371,7 +380,7 @@
                     }
                 }
                 &__logo {
-                    padding-top: 40px;
+                    padding-top: config.$padding-margin-global-40;
 
                     img {
                         width: 50%;
@@ -379,7 +388,7 @@
                 }
                 &__image {
                     img {
-                        width: 300px;
+                        width: 250px;
                         height: 500px;
                     }
                 }
@@ -400,13 +409,8 @@
                     font-size: 40px;
                 }
             }
-
-            &__subtitle {
-                p {
-                    font-size: 10px;
-                }
-            }
         }
+        
         &__container {
             &__killer {
                 &__text {
@@ -421,7 +425,7 @@
                 }
                 &__image {
                     img {
-                        width: 150px;
+                        width: 175px;
                         height: 400px;
                     }
                 }
@@ -440,7 +444,7 @@
                 }
                 &__image {
                     img {
-                        width: 150px;
+                        width: 175px;
                         height: 400px;
                     }
                 }

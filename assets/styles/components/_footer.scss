@@ -1,35 +1,39 @@
+@use '../settings/config.variables' as config;
+
 .footer {
     display: flex;
     max-width: 1920px;
     justify-content: center;
-    background-color: #1d1d1d;
+    background-color: config.$background-block-color;
 
     &__block {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 20px 40px;
+        padding: config.$padding-content;
 
         &__logo {
             display: flex;
             justify-content: center;
-            padding-bottom: 20px;
-            img {
-                width: 5%;
+            padding-bottom: config.$padding-margin-global-20;
+
+            svg {
+                width: 40px;
+                fill: config.$text-color;
             }
         }
 
         &__legal {
             display: flex;
             flex-direction: row;
-            gap: 20px;
-            padding-bottom: 20px;
+            gap: config.$gap-global;
+            padding-bottom: config.$padding-margin-global-20;
 
             p {
-                font-family: "Roboto", sans-serif;
-                font-size: 12px;
-                font-weight: 400;
-                color: white;
+                font-family: config.$font-family-text;
+                font-size: config.$p-medium-size;
+                font-weight: config.$p-small-weight;
+                color: config.$text-color;
                 cursor: pointer;
                 
                 &:hover {
@@ -43,7 +47,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-bottom: 20px;
+            padding-bottom: config.$padding-margin-global-20;
 
             img {
                 width: 150px;
@@ -56,10 +60,10 @@
             text-align: center;
 
             p {
-                font-family: "Roboto", sans-serif;
-                font-size: 16px;
+                font-family: config.$font-family-text;
+                font-size: config.$p-medium-size;
                 font-weight: bold;
-                color: white;
+                color: config.$text-color;
                 opacity: 0.5;
             }
         }
@@ -74,13 +78,13 @@
                 align-items: center;
 
                 p {
-                    font-size: 14px;
+                    font-size: config.$p-small-size;
                 }
             }
 
             &__warning {
                 p {
-                    font-size: 14px;
+                    font-size: config.$p-small-size;
                 }
             }
         }
