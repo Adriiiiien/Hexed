@@ -61,6 +61,11 @@
                 font-size: config.$p-big-size;
                 font-weight: config.$p-weight;
                 color: config.$text-color;
+
+                span {
+                    font-weight: config.$h1-weight;
+                    color: rgb(127, 127, 127);
+                }
             }
         }
 
@@ -74,13 +79,13 @@
                 font-size: config.$p-big-size;
                 font-weight: config.$p-weight;
                 color: config.$text-color;
-                background-color: rgba(204, 33, 33, 0.4);
+                background-color: rgba(127, 127, 127, 0.4);
                 padding: 10px 15px;
                 transition: all 0.3s ;
 
                 &:hover {
                     background-color: config.$text-color;
-                    color: rgb(204, 33, 33);
+                    color: rgb(127, 127, 127);
                 }
             }
         }
@@ -89,9 +94,13 @@
     &__image {
         position: absolute;
         padding-top: 20px;
-        right: -25%;
+        right: -35%;
         top: 0;
         z-index: 2;
+
+        img {
+            width: 80%;
+        }
     }
 }
 
@@ -154,7 +163,7 @@
         &__text {
             -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(204, 33, 33, 0.5);
+            border: 1px solid rgba(127, 127, 127, 0.5);
             padding: config.$padding-margin-global-20;
             border-radius: config.$border-radius-global-20;
             margin-left: config.$padding-margin-global-20;
@@ -182,11 +191,12 @@
             }
         }
         &__image {
+            top: inherit;
             bottom: 0;
-            left: -60%;
+            left: 45%;
 
             img {
-                width: 110%;
+                width: 50%;
             }
         }
 

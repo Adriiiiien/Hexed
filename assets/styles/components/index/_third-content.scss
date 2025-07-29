@@ -5,6 +5,7 @@
     width: 100%;
     height: 500px;
     background-color: config.$background-color;
+    padding-top: 20px;
     position: relative;
     align-content: center;
     overflow: hidden;
@@ -60,6 +61,11 @@
                 font-size: config.$p-big-size;
                 font-weight: config.$p-weight;
                 color: config.$text-color;
+
+                span {
+                    font-weight: config.$h1-weight;
+                    color: rgb(204, 33, 33);
+                }
             }
         }
 
@@ -73,13 +79,13 @@
                 font-size: config.$p-big-size;
                 font-weight: config.$p-weight;
                 color: config.$text-color;
-                background-color: rgba(26, 134, 197, 0.4);
+                background-color: rgba(204, 33, 33, 0.4);
                 padding: 10px 15px;
                 transition: all 0.3s ;
 
                 &:hover {
                     background-color: config.$text-color;
-                    color: rgb(26, 134, 197);
+                    color: rgb(204, 33, 33);
                 }
             }
         }
@@ -88,12 +94,12 @@
     &__image {
         position: absolute;
         padding-top: 20px;
-        right: -20%;
-        top: -20%;
+        right: -15%;
+        top: 0;
         z-index: 2;
 
         img {
-            width: 75%;
+            width: 90%;
         }
     }
 }
@@ -112,7 +118,7 @@
             right: -50%;
 
             img {
-                width: 65%;
+                width: 75%;
             }
         }
     }
@@ -140,10 +146,10 @@
             }
         }
         &__image {
-            right: -100%;
+            right: -85%;
 
             img {
-                width: 55%;
+                width: 75%;
             }
         }
     }
@@ -157,7 +163,7 @@
         &__text {
             -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(26, 134, 197, 0.5);
+            border: 1px solid rgba(204, 33, 33, 0.5);
             padding: config.$padding-margin-global-20;
             border-radius: config.$border-radius-global-20;
             margin-left: config.$padding-margin-global-20;
@@ -184,14 +190,13 @@
                 }
             }
         }
-
         &__image {
-            right: -15%;
-            top: 0;
-            bottom: 0;
+            top: inherit;
+            bottom: -10%;
+            left: 55%;
 
             img {
-                width: 150%;
+                width: 60%;
             }
         }
 
