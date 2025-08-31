@@ -1,11 +1,11 @@
-# 🧪 Plan de Test – HEXED
+# Plan de Test – HEXED
 
 > Cette branche contient la mise en place du **plan de test complet** pour le projet fil rouge 'HEXED'.  
 > L'objectif est de définir la stratégie de tests pour garantir la fiabilité, la sécurité et la cohérence de l'application dès sa conception.
 
 ---
 
-## 🎯 Objectif
+## Objectif
 
 L’application a pour but de devenir un site compagnon autour du jeu **Dead by Daylight**.  
 Elle permettra aux utilisateurs de :
@@ -20,7 +20,7 @@ Ce README documente la stratégie de test prévue pour l’ensemble de ces fonct
 
 ---
 
-## 🧱 Types de tests prévus
+## Types de tests prévus
 
 | Type de test        | Objectif                                                       |
 |---------------------|----------------------------------------------------------------|
@@ -34,9 +34,9 @@ Ce README documente la stratégie de test prévue pour l’ensemble de ces fonct
 
 ---
 
-## 📋 Plan de test par fonctionnalité
+## Plan de test par fonctionnalité
 
-### 🔐 Authentification & utilisateurs
+### Authentification & utilisateurs
 
 | Fonctionnalité                         | Type de test       | Description                                                 | Priorité |
 |---------------------------------------|--------------------|-------------------------------------------------------------|----------|
@@ -47,7 +47,7 @@ Ce README documente la stratégie de test prévue pour l’ensemble de ces fonct
 
 ---
 
-### 📚 API – Objets, personnages, perks
+### API – Objets, personnages, perks
 
 | Fonctionnalité              | Type de test     | Description                                              | Priorité |
 |----------------------------|------------------|----------------------------------------------------------|----------|
@@ -58,7 +58,7 @@ Ce README documente la stratégie de test prévue pour l’ensemble de ces fonct
 
 ---
 
-### 💬 Commentaires et likes
+### Commentaires et likes
 
 | Fonctionnalité              | Type de test     | Description                                               | Priorité |
 |----------------------------|------------------|-----------------------------------------------------------|----------|
@@ -70,7 +70,7 @@ Ce README documente la stratégie de test prévue pour l’ensemble de ces fonct
 
 ---
 
-### 🧩 Tier Lists
+### Tier Lists
 
 | Fonctionnalité                | Type de test     | Description                                              | Priorité |
 |------------------------------|------------------|----------------------------------------------------------|----------|
@@ -81,7 +81,7 @@ Ce README documente la stratégie de test prévue pour l’ensemble de ces fonct
 
 ---
 
-## 🛠️ Outils de test envisagés
+## Outils de test envisagés
 
 | Usage                     | Outil envisagé         |
 |---------------------------|------------------------|
@@ -91,7 +91,7 @@ Ce README documente la stratégie de test prévue pour l’ensemble de ces fonct
 
 ---
 
-## 📁 Structure du dossier `test/`
+## Structure du dossier `test/`
 
 /test
 ├── README.md # Ce fichier
@@ -106,7 +106,7 @@ Ce README documente la stratégie de test prévue pour l’ensemble de ces fonct
 
 > Les fichiers de test seront complétés au fur et à mesure de l’avancement du projet.
 
-## 🧪 Lancement futur des tests
+## Lancement futur des tests
 
 ```bash
 # Installation des dépendances
